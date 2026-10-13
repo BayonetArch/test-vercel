@@ -1,0 +1,5 @@
+{
+  "name": "test-vercel",
+  "private": true,
+  "workspaces": ["frontend","backend"]
+}
