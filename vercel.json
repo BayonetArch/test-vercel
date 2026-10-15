@@ -24,6 +24,5 @@
         "service": "frontend"
       }
     }
-  ],
-  "regions": ["sin1"]
+  ]
 }
