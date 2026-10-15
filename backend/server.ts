@@ -36,6 +36,15 @@ function validateBody(schema: z.ZodType) {
 
 app.use((req: Request, res: Response, next: NextFunction) => {
   console.log(req.method, req.url);
+  // res.setHeader("Access-Control-Allow-Origin", "*");
+  // res.setHeader("Access-Control-Allow-Methods", "GET, POST");
+  // res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  //
+  // if (req.method === "OPTIONS") {
+  //   res.end();
+  //   return;
+  // }
+
   next();
 });
 app.use(express.json());
